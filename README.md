@@ -1,4 +1,4 @@
-I ma sowrav das (cse-18 batch,roll o5)
+I am SOWRAV DAS (cse-18 batch,roll o5)
 This repo is for my Data Sturcture Lab problems
 and all the topics i learn or practised in college lab
 
