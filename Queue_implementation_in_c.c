@@ -1,3 +1,11 @@
+/* Queue data structure ->FIFO(first in first out)
+to implement queue we need a front,top,size and dynamic array
+here,enqueue means inserting at the top,dequeue deleting from the front
+but,linaer queue if we delete(dequeue) an element it never dispper completly
+the front just sifted toward top ,so we cann't reuse that memory, that swhy 
+we use circular Queue
+.BUT HERE IS THE BASIC IMPLEMENTATION IF LINEAR QUEUE
+*/
 #include<stdio.h>
 #include<stdlib.h>
 typedef struct {
@@ -81,7 +89,9 @@ dequeue(q1);
 display(q1);
 dequeue(q1);
 display(q1);
-
-   
+//notice how instert happeing at the top(at the end)
+//and delete heppening form the front 
+//that s the queue data structure first comes,first serve
+  
     return 0;
 }
