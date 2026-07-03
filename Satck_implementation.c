@@ -25,6 +25,9 @@ int is_full(stack *s){
 
 int is_empty(stack *s){
     //return 1 if there is no element is the stack, 0 if there atlest one exist
+    if(s==NULL){
+        return 1;
+    }
     return ((*s).top==-1);
 }
 
@@ -53,6 +56,10 @@ int peek(stack *s){ //return the last element
     }
     return s->parr[s->top];
 }
+void freestack(stack *s){
+    free(s->parr); //first have to free array containing all element
+    free(s); //then free stack
+}
 int main(){
     int n;
     printf("enter size : ");
@@ -74,6 +81,10 @@ int main(){
     printf("\nlast element is : %d\n",peek(s1));
     pop(s1);
     printf("now last element is : %d\n",peek(s1));
+    freestack(s1);
+    s1=NULL;
+    int mm1=is_empty(s1);
+    printf("%d \n",mm1);
     
     return 0;
 }
