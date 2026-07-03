@@ -10,7 +10,7 @@ typedef struct {
     int *parr;
 }stack;
 
-void *createstack(int sz){ //function should be a pointer since its will return a addres
+stack *createstack(int sz){ //function should be a pointer since its will return a addres
     stack *STACK=(stack*)malloc(sizeof(stack)); //STACK pointer of stack type
     (*STACK).top=-1;
     (*STACK).size=sz;
