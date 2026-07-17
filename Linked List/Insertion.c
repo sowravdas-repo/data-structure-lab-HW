@@ -36,8 +36,27 @@ void insertback(node **head,int value){
     tmp->nextptr=newnode;
 }
 void insertposition(node **head,int value,int pos){
-    node *newnode=createnode(value);
-    
+    if(pos==1){
+        insertfront(head,value);
+        return;
+    }
+    else {
+        node *newnode=createnode(value);
+        node *tmp=*head;
+        for(int i=1;i<pos-1 && tmp!=NULL;i++){
+            tmp=tmp->nextptr;
+        }
+
+        if(tmp==NULL){
+            printf("Invalid positon !!\n");
+            free(newnode);
+            return;
+        }
+        newnode->nextptr=tmp->nextptr;
+        tmp->nextptr=newnode;
+
+    }
+
 }
 void display(node *head){
     node *tmp=head;
@@ -58,6 +77,7 @@ int main(){
     insertfront(&head,100);
     display(head);
     insertback(&head,30);
+    insertposition(&head,99,3);
     display(head);
 
     return 0;
