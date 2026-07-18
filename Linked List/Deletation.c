@@ -94,12 +94,17 @@ void display(node *head){
     printf("\n");
 }
 int main(){
+  //initialization
   node *head=NULL;
+
+  //insertion
   insertfront(&head,10);
   insertfront(&head,20);
   insertback(&head,5);
   insertposition(&head,99,2);
   display(head);
+
+  //deletion
   deletefront(&head);
    display(head);
    deleteback(&head);
