@@ -1,3 +1,9 @@
+/*
+Program TO Calvulate square root of a number : 
+  i. perfect squre like 16,169
+  ii.Any others like 175,78
+  USING BINARY SEARCH TECHNIQUE
+*/
 #include<stdio.h>
 typedef long long ll;
 
