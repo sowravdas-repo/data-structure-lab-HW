@@ -11,3 +11,16 @@ output : 1 2 3 3 4 6 8 9 66 99
 
 time complexity : O(n^2)
 space complexity : O(1)
+
+2.Selection Sort 
+
+Idea : In each pass ,find the smallest element from the unsorted part and swap it with the first unsorted position,It performs one swap per pass
+
+Example : 
+input - int a[8]={4,3,5,2,1,6,10,99};
+
+output - 1 2 3 4 5 6 10 99 
+
+time complexity : O(n^2)
+space : O(1)
+

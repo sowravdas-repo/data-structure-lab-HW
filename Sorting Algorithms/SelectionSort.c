@@ -9,9 +9,8 @@ void swap(int *a,int *b){
 int main(){
     int a[8]={4,3,5,2,1,6,10,99};
     int n=sizeof(a)/sizeof(a[0]);
-
-    //selection sort
-    for(int i=0;i<n;i++){
+    
+    for(int i=0;i<n-1;i++){
          int mn=INT_MAX;
          int idx=-1;
         for(int j=i;j<n;j++){
