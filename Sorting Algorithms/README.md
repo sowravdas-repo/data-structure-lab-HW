@@ -40,6 +40,18 @@ space : O(1)
     complexity : time -> O(n+k) ,k denote max element
                  space -> O(k)
 
-        -------------------------
+    --------------------------
         
+ 4.  INSERTION SORT 
+     Idea : take one lement and insert it at its correct position at already sorted part 
 
+     example :
+            input : 5
+                    5 3 2 4 6 
+            output : 
+                    2 3 4 5 6    
+
+      complexity : time -> O(n^2)
+                   space -> O(1)
+
+     
