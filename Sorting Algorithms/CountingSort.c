@@ -15,15 +15,12 @@ int main(){
     }
 
     int freq[k+1];
-     setAllzero(freq,0,k+1);
+    setAllzero(freq,0,k+1);
 
-    //  for(int i=0;i<k+1;i++) printf("%d ",freq[i]);
-    for(int i=0;i<n;i++){
-        freq[a[i]]++;
-    }
+   for(int i=0;i<n;i++) freq[a[i]]++;
 
     //for(int i=0;i<k+1;i++) printf("%d ",freq[i]);
-    for(int i=1;i<=k;i++){
+    for(int i=0;i<=k;i++){
         while(freq[i] > 0){
             // printf("%d ",freq[a[i]]);
             printf("%d ",i);
