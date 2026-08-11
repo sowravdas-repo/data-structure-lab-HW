@@ -54,4 +54,16 @@ space : O(1)
       complexity : time -> O(n^2)
                    space -> O(1)
 
+5.  MERGE SORT 
+     Idea : use divide and conquer to divide array into two halves repetedly, when one element left merge the array, kept doing this recursivly
+
+     example :
+            input : 10
+                    2 3 4 11 44 2 33 3 4 5
+            output : 
+                    2 2 3 3 4 4 5 11 33 44   
+
+      complexity : time -> O(nlog2(n))
+                   space -> O(n)
+
      
